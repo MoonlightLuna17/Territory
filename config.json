@@ -1,0 +1,15 @@
+{
+	"port": 8080,
+	"bots": 3,
+	"consts": {
+		"GRID_COUNT": 100,
+		"CELL_WIDTH": 40,
+		"SPEED": 5,
+		"BORDER_WIDTH": 20,
+		"MAX_PLAYERS": 30,
+		"NEW_PLAYER_LAG": 60,
+		"LEADERBOARD_NUM": 3,
+		"PREFIXES": "Kind Mean Annoying Happy Old Flying Hopeful Sad Walking Running Little Tall Short Floating Hungry Angry Jumping Cooking Graceful Dancing Reading Funny Laughing Shy Sneering Smirking Average Strong Weak Boring Dull Interesting Smug Gleeful Gloomy Magical Moaning Brave Shaking",
+		"NAMES": "Ben Chloe Claire Hugo Joe Juliette Shai Eunji Neha Allison Dolly Keefe Karina Aubrey Sophia Matilda Erin Penelope Rebecca Maureen Jasmeet Grace James Hannah Emma Freya Max Jack Lucy Alba Willa Jemima Harry Hermione Ron Luna Snape Draco Dumbledore McGonagall Hagrid Neville Myrtle Blue Darkstalker Clearsight Qibli Turtle Moonwatcher Peril Clay Tsunami Sunny Starflight Glory Kinkajou Swordtail Sundew Katydid Cricket Sophie Linh Tam Biana Fitz Dex Wylie Marella Dhana"
+	}
+}

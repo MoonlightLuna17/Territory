@@ -1,0 +1,169 @@
+/* arabic */
+@font-face {
+	font-family: "cursive";
+	font-style: normal;
+	font-weight: 600;
+	src: local("Indie Flower"), local("Indie Flower"), url(<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">) format("stylesheet");
+	unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+FB50-FDFF, U+FE80-FEFC;
+}
+/* latin-ext */
+@font-face {
+	font-family: "cursive";
+	font-style: normal;
+	font-weight: 600;
+	src: local("Indie Flower"), local("Indie Flower"), url(<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">) format("stylesheet");
+	unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+	font-family: "cursive";
+	font-style: normal;
+	font-weight: 600;
+	src: local("Indie Flower"), local("Indie Flower"), url(<link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">) format("stylesheet");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: white;
+	color: cyan;
+	font-family: 'Indie Flower', cursive;
+	user-select: none;
+	background-attachment: fixed;
+}
+canvas {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+#begin, #wasted {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .8);
+}
+#github svg {
+	transition: all 1s;
+	fill: #222;
+	color: cyan;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+	width: 80px;
+	height: 80px;
+	transform: rotate(-90deg);
+}
+#github:hover svg {
+	width: 160px;
+	height: 160px;
+}
+.center {
+	vertical-align: middle;
+	text-align: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.scale {
+	animation: scale 5s infinite ease-out;
+}
+@keyframes scale {
+	0% {
+		transform: scale(0.8);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.8);
+	}
+}
+input, button {
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.5rem;
+	outline: none;
+	border: 0;
+	padding: .5rem 1rem;
+	line-height: 2.5rem;
+}
+button {
+	text-align: center;
+	cursor: pointer;
+}
+button:active {
+	transform: translateY(4px);
+}
+button:disabled {
+	cursor: not-allowed;
+}
+#name, #settings {
+	background: black;
+	border-bottom: 6px  #a1a18d;
+	color: cyan;
+}
+::placeholder {
+	color: cyan;
+}
+.yellow {
+	background: black;
+	border-bottom: 6px  #a1a130;
+	color: cyan;
+}
+.yellow:hover {
+	background: darkgray;
+}
+.yellow:active {
+	border-bottom: 2px  #a1a130;
+}
+.orange {
+	background: black;
+	border-bottom: 6px  #AE4E0D;
+	color: cyan;
+}
+.orange:hover {
+	background: darkgray;
+}
+.orange:active {
+	border-bottom: 2px  #AE4E0D;
+}
+.green {
+	background: black;
+	border-bottom: 6px  #56a130;
+	color: cyan;
+}
+.green:hover {
+	background: darkgray;
+}
+.green:active {
+	border-bottom: 2px  #56a130;
+}
+span {
+	color: cyan;
+}
+#wasted {
+	display: none;
+}
+#wasted img {
+	width: 650px;
+}
+.toggle {
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+}
+#settings {
+	display: grid;
+	padding: 20px;
+}
+#settings > * {
+	margin-top: 10px;
+}
